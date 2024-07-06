@@ -72,8 +72,9 @@ class Project(db.Model):
 
     def __repr__(self):
         return f'<Review {self.id}, {self.title}, {self.budget}>'
+        
 
-
+# Association Model to store many-to-many relationship with attributes between employee and project
 class Assignment(db.Model):
     __tablename__ = "assignments"
 
